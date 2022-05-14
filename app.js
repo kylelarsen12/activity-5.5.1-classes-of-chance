@@ -15,6 +15,10 @@ class Casino {
       console.log(`Congratulations! You win ${betAmount}`);
     }
   }
+
+  rollDice(sides) {
+    console.log("You rolled a " + (1 + Math.floor(Math.random() * sides)));
+  }
 }
 
 // TESTS
@@ -35,10 +39,9 @@ myBonusCasino.playGame(25);
 myBonusCasino.playGame(35);
 
 // Extra BONUS TESTS
-/*
+
 const myExtraBonusCasino = new Casino("HackerU Extra Bonus Casino", false);
 console.log(myExtraBonusCasino);
-myExtraBonusCasino.rollDie(6);
-myExtraBonusCasino.rollDie(20);
-myExtraBonusCasino.rollDie(100);
-*/
+myExtraBonusCasino.rollDice(6);
+myExtraBonusCasino.rollDice(20);
+myExtraBonusCasino.rollDice(100);
